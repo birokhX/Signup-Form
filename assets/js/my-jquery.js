@@ -11,7 +11,7 @@ $("#form").on("submit", function (e) {
     email = $("#email").val().trim();
     password = $("#password").val().trim();
     if (firstName.length > 0 && lastName.length > 0 && email.length > 0 && password.length > 0) {
-        $("#message").text(firstName + " " + lastName + "، عزیز خوش آمدی!").removeClass("text-danger");
+        $("#message").text(firstName + " " + lastName + " " + "عزیز، خوش آمدی!").removeClass("text-danger");
         $("#modal_container").addClass("modal_container");
         $("#modal_container").fadeIn(500);
     } else {
